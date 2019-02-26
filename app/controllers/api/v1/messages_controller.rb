@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_action :authorize_access_request!, except: [:show, :index]
   before_action :set_message, only: [:show, :update, :destroy]
 
   # GET /messages
