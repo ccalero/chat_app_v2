@@ -35,7 +35,7 @@ export default {
       var credentials = {
         username: this.credentials.username
       }
-      auth.login(this, credentials, 'secretquote')
+      auth.login(this, credentials, 'rooms')
     },
     signinSuccessful (response) {
       if (!response.data.csrf) {

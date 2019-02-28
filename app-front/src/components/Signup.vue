@@ -37,7 +37,7 @@ export default {
       }
       // We need to pass the component's this context
       // to properly make use of http in the auth service
-      auth.login(this, credentials, 'secretquote')
+      auth.signup(this, credentials, 'secretquote')
       // this.$http.plain.post('/signup', { username: this.username })
       //   .then(response => this.signupSuccessful(response))
       //   .catch(error => this.signupFailed(error))
