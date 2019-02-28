@@ -1,30 +1,31 @@
 <template>
-  <div class="max-w-md m-auto py-10">
-    <div class="text-red" v-if="error">{{ error }}</div>
-    <h3 class="font-mono font-regular text-3xl mb-4">Add a new room</h3>
+  <div class="">
+    <h1>Rooms</h1>
+    <div class="alert alert-danger" role="alert" v-if="error">
+      {{ error }}
+    </div>
+
+    <h3 class="">Add a new room</h3>
     <form action="" @submit.prevent="addRoom">
-      <div class="mb-6">
-        <input class="input"
-          autofocus autocomplete="off"
-          placeholder="Type an arist name"
-          v-model="newRoom.name" />
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name Room</label>
+        <input class="form-control" v-model="newRoom.name" />
       </div>
-      <input type="submit" value="Add Room" class="font-sans font-bold px-4 rounded cursor-pointer no-underline bg-green hover:bg-green-dark block w-full py-4 text-white items-center justify-center" />
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <hr class="border border-grey-light my-6" />
-
-    <ul class="list-reset mt-4">
-      <li class="py-4" v-for="room in rooms" :key="room.id" :room="room">
-
-        <div class="flex items-center justify-between flex-wrap">
-          <p class="block flex-1 font-mono font-semibold flex items-center ">
-            <svg class="fill-current text-indigo w-6 h-6 mr-2" viewBox="0 0 20 20" width="20" height="20"><title>music room</title><path d="M15.75 8l-3.74-3.75a3.99 3.99 0 0 1 6.82-3.08A4 4 0 0 1 15.75 8zm-13.9 7.3l9.2-9.19 2.83 2.83-9.2 9.2-2.82-2.84zm-1.4 2.83l2.11-2.12 1.42 1.42-2.12 2.12-1.42-1.42zM10 15l2-2v7h-2v-5z"></path></svg>
-            {{ room.name }}
-          </p>
+    <div class="row">
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <ul>
+            <li class="list-group-item list-group-item-action" v-for="room in rooms" :key="room._id.$oid" :room="room">
+              <router-link :to="{ name: 'room', params: {id: room._id.$oid } }">{{ room.title }}</router-link>
+            </li>
+          </ul>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,6 +40,17 @@ export default {
       editedRoom: ''
     }
   },
+  mounted() {
+      this.$http.get('http://localhost:3000/api/v1/rooms')
+        .then(response => {
+          if (response.status === 200) {
+            this.rooms = response.body
+          }
+        })
+        .catch(error => {
+          console.error(error)
+        })
+    },
   created () {
     if (!localStorage.signedIn) {
       this.$router.replace('/')

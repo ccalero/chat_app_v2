@@ -7,14 +7,13 @@ import VueResource from 'vue-resource'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-// import {auth} from './backend/auth'
-
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(BootstrapVue)
 Vue.use(VueResource)
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
