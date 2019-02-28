@@ -1,29 +1,26 @@
 <template>
-  <div class="max-w-sm m-auto my-8">
-    <div class="border p-10 border-grey-light shadow rounded">
-      <h3 class="text-2xl mb-6 text-grey-darkest">Sign In</h3>
-      <form @submit.prevent="signin">
-        <div class="text-red" v-if="error">{{ error }}</div>
-
-        <div class="mb-6">
-          <label for="username" class="label">username</label>
-          <input type="text" v-model="username" class="input" id="username">
-        </div>
-
-        <button type="submit" class="font-sans font-bold px-4 rounded cursor-pointer no-underline bg-green hover:bg-green-dark block w-full py-4 text-white items-center justify-center">Sign In</button>
-
-        <div class="my-4"><router-link to="/signup" class="link-grey">Sign up</router-link></div>
-      </form>
+  <div class="col-sm-4 col-sm-offset-4">
+    <h2>Sign In</h2>
+    <p>Log in to your account.</p>
+    <div class="alert alert-danger" v-if="error">
+      <p>{{ error }}</p>
     </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter your username" v-model="credentials.username" >
+    </div>
+    <button class="btn btn-primary" @click="signin()">Access</button>
   </div>
 </template>
 
 <script>
+import auth from '../backend/auth'
 export default {
   name: 'Signin',
   data () {
     return {
-      username: '',
+      credentials: {
+        username: ''
+      },
       error: ''
     }
   },
@@ -35,9 +32,10 @@ export default {
   },
   methods: {
     signin () {
-      this.$http.plain.post('/signin', { username: this.email })
-        .then(response => this.signinSuccessful(response))
-        .catch(error => this.signinFailed(error))
+      var credentials = {
+        username: this.credentials.username
+      }
+      auth.login(this, credentials, 'secretquote')
     },
     signinSuccessful (response) {
       if (!response.data.csrf) {
@@ -47,7 +45,7 @@ export default {
       localStorage.csrf = response.data.csrf
       localStorage.signedIn = true
       this.error = ''
-      this.$router.replace('/records')
+      this.$router.replace('/rooms')
     },
     signinFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || ''
@@ -56,7 +54,7 @@ export default {
     },
     checkSignedIn () {
       if (localStorage.signedIn) {
-        this.$router.replace('/records')
+        this.$router.replace('/rooms')
       }
     }
   }

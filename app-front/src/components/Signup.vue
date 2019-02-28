@@ -1,29 +1,26 @@
 <template>
-  <div class="max-w-sm m-auto my-8">
-    <div class="border p-10 border-grey-light shadow rounded">
-      <h3 class="text-2xl mb-6 text-grey-darkest">Sign Up</h3>
-      <form @submit.prevent="signup">
-        <div class="text-red" v-if="error">{{ error }}</div>
-
-        <div class="mb-6">
-          <label for="username" class="label">username</label>
-          <input type="text" v-model="username" class="input" id="username">
-        </div>
-
-        <button type="submit" class="font-sans font-bold px-4 rounded cursor-pointer no-underline bg-green hover:bg-green-dark block w-full py-4 text-white items-center justify-center">Sign Up</button>
-
-        <div class="my-4"><router-link to="/" class="link-grey">Sign In</router-link></div>
-      </form>
+  <div class="col-sm-4 col-sm-offset-4">
+    <h2>Sign Up</h2>
+    <p>Create new account.</p>
+    <div class="alert alert-danger" v-if="error">
+      <p>{{ error }}</p>
     </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Enter your username" v-model="credentials.username" >
+    </div>
+    <button class="btn btn-primary" @click="signup()">Access</button>
   </div>
 </template>
 
 <script>
+import auth from '../backend/auth'
 export default {
   name: 'Signup',
   data () {
     return {
-      username: '',
+      credentials: {
+        username: ''
+      },
       error: ''
     }
   },
@@ -35,9 +32,15 @@ export default {
   },
   methods: {
     signup () {
-      this.$http.plain.post('/signup', { username: this.username })
-        .then(response => this.signupSuccessful(response))
-        .catch(error => this.signupFailed(error))
+      var credentials = {
+        username: this.credentials.username
+      }
+      // We need to pass the component's this context
+      // to properly make use of http in the auth service
+      auth.login(this, credentials, 'secretquote')
+      // this.$http.plain.post('/signup', { username: this.username })
+      //   .then(response => this.signupSuccessful(response))
+      //   .catch(error => this.signupFailed(error))
     },
     signupSuccessful (response) {
       if (!response.data.csrf) {
@@ -48,7 +51,7 @@ export default {
       localStorage.csrf = response.data.csrf
       localStorage.signedIn = true
       this.error = ''
-      this.$router.replace('/records')
+      this.$router.replace('/rooms')
     },
     signupFailed (error) {
       this.error = (error.response && error.response.data && error.response.data.error) || 'Something went wrong'
@@ -57,7 +60,7 @@ export default {
     },
     checkedSignedIn () {
       if (localStorage.signedIn) {
-        this.$router.replace('/records')
+        this.$router.replace('/rooms')
       }
     }
   }

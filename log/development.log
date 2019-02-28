@@ -1,0 +1,802 @@
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:19:44 +0100
+  
+SyntaxError (/home/ccalero/repo/chat_app_v2/app/controllers/application_controller.rb:3: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+...s::Errors::Unauthorized, with :not_authorized
+...                              ^):
+  
+app/controllers/application_controller.rb:3: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/favicon.ico" for 127.0.0.1 at 2019-02-28 11:19:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:20:17 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for HomeController):
+  
+actionpack (5.2.2) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:20:56 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:20:57 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:17 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:18 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:18 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:18 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:18 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:18 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:32 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:32 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:33 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:33 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:21:34 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/api/v1/rooms/" for 127.0.0.1 at 2019-02-28 11:22:00 +0100
+  
+LoadError (Unable to autoload constant Api::V1::RoomsController, expected /home/ccalero/repo/chat_app_v2/app/controllers/api/v1/rooms_controller.rb to define it):
+  
+activesupport (5.2.2) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.2) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.2) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.2) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 192.168.209.1 at 2019-02-28 11:22:09 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 1ms
+
+
+Started GET "/" for 192.168.209.1 at 2019-02-28 11:22:22 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/" for 192.168.209.1 at 2019-02-28 11:22:37 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started GET "/api/v1/messages" for 192.168.209.1 at 2019-02-28 11:28:28 +0100
+  
+LoadError (Unable to autoload constant Api::V1::MessagesController, expected /home/ccalero/repo/chat_app_v2/app/controllers/api/v1/messages_controller.rb to define it):
+  
+activesupport (5.2.2) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.1) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.2) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:285:in `const_get'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:285:in `block in constantize'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.2) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.2) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.2) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.2) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/favicon.ico" for 192.168.209.1 at 2019-02-28 11:28:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/messages" for 192.168.209.1 at 2019-02-28 11:29:37 +0100
+  
+TypeError (superclass mismatch for class MessagesController):
+  
+app/controllers/api/v1/messages_controller.rb:1:in `<main>'
+Started GET "/api/v1/messages" for 192.168.209.1 at 2019-02-28 11:32:22 +0100
+Processing by Api::V1::MessagesController#index as HTML
+Completed 200 OK in 9ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/users" for 192.168.209.1 at 2019-02-28 11:32:34 +0100
+Processing by Api::V1::UsersController#index as HTML
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+MONGODB | Error running ismaster on localhost:27017: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017
+Started GET "/api/v1/messages" for 192.168.209.1 at 2019-02-28 11:34:36 +0100
+Processing by Api::V1::MessagesController#index as HTML
+Completed 200 OK in 14ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/users" for 192.168.209.1 at 2019-02-28 11:34:39 +0100
+Processing by Api::V1::UsersController#index as HTML
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47221705307180 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47221706183920 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 10:34:39 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.010292525>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47221707100800 type=uuid data=0xe0945a2075b44c18...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+Completed 200 OK in 37ms (Views: 28.0ms)
+
+
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x69970363916900 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x69970363899660 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 10:38:09 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.01442615>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Aaa$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_v2_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c77ba116e955281ecb5c912'), "username"=>"aa"}]}
+MONGODB | localhost:27017 | chat_app_v2_development.insert | SUCCEEDED | 0.030s
+Started GET "/api/v1/users" for 192.168.209.1 at 2019-02-28 11:38:18 +0100
+Processing by Api::V1::UsersController#index as HTML
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47221707100800 type=uuid data=0xe0945a2075b44c18...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 6.0ms)
+
+
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario1$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_v2_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c77ba276e955281ecb5c913'), "username"=>"usuario1"}]}
+MONGODB | localhost:27017 | chat_app_v2_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario2$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_v2_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c77ba296e955281ecb5c914'), "username"=>"usuario2"}]}
+MONGODB | localhost:27017 | chat_app_v2_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario3$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_v2_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c77ba2b6e955281ecb5c915'), "username"=>"usuario3"}]}
+MONGODB | localhost:27017 | chat_app_v2_development.insert | SUCCEEDED | 0.000s
+Started GET "/api/v1/users" for 192.168.209.1 at 2019-02-28 11:38:36 +0100
+Processing by Api::V1::UsersController#index as HTML
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47221707100800 type=uuid data=0xe0945a2075b44c18...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 14ms (Views: 13.5ms)
+
+
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:44:39 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47221707100800 type=uuid data=0xe0945a2075b44c18...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.010s
+Completed 500 Internal Server Error in 17899ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:10:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47221707100800 type=uuid data=0xe0945a2075b44c18...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:46:31 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47199830936660 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47199831093340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 10:46:31 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002549497>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47199831312680 type=uuid data=0x498f0505f41d4a2b...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+Completed 500 Internal Server Error in 22ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:48:27 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47199831312680 type=uuid data=0x498f0505f41d4a2b...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.005s
+Completed 500 Internal Server Error in 12ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47199831312680 type=uuid data=0x498f0505f41d4a2b...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x69970363892700 type=uuid data=0xb235f8abb9b84ee7...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:55:14 +0100
+Processing by HomeController#index as HTML
+Completed 204 No Content in 0ms
+
+
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:55:36 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47031557096480 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47031556368020 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 10:55:37 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.024444929>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 500 Internal Server Error in 65ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:55:43 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario2", "signin"=>{"username"=>"usuario2"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario2"}, "lsid"=>{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 500 Internal Server Error in 10ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:58:34 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario2", "signin"=>{"username"=>"usuario2"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario2"}, "lsid"=>{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 500 Internal Server Error in 5ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 11:58:38 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.003s
+Completed 500 Internal Server Error in 7ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x70119372595220 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70119372507400 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:00:05 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002671029>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x70119372436720 type=uuid data=0x4bbc51019d1a4e88...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x70119372436720 type=uuid data=0x4bbc51019d1a4e88...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:02:16 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.007s
+Completed 500 Internal Server Error in 10ms
+
+
+  
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  
+app/controllers/signin_controller.rb:9:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70119372436720 type=uuid data=0x4bbc51019d1a4e88...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47383554883360 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47383555292340 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:10:03 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.003009698>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47383554981760 type=uuid data=0x0f4700dd8c4c4141...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47031556128000 type=uuid data=0xf8a0134aa7fe4789...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47383554981760 type=uuid data=0x0f4700dd8c4c4141...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:12:58 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47038021376660 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47038021082080 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:12:58 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.002221613>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 37ms (Views: 0.3ms)
+
+
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:13:52 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario10", "signin"=>{"username"=>"usuario10"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario10"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 18ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"usuario10"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:18:39 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 13ms (Views: 0.3ms)
+
+
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x70119376512320 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x70119376473140 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:19:53 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.00292373>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x70119376456920 type=uuid data=0x943646a9aa2e429d...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x70119376456920 type=uuid data=0x943646a9aa2e429d...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:27:50 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 0.3ms)
+
+
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:28:00 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"usuario1", "signin"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+Completed 200 OK in 13ms (Views: 0.1ms)
+
+
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:30:45 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"user1", "signin"=>{"username"=>"user1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"user1"}, "lsid"=>{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.006s
+Completed 404 Not Found in 25ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"user1"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47038021010120 type=uuid data=0x77a6cd6b8e894607...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:34:14 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"user1", "signin"=>{"username"=>"user1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47350294828880 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47350294542880 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:34:15 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.005037229>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"user1"}, "lsid"=>{"id"=><BSON::Binary:0x47350294414880 type=uuid data=0xeb94954bb1dd42e4...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 24ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"user1"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47350294414880 type=uuid data=0xeb94954bb1dd42e4...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:39:11 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"user1", "signin"=>{"username"=>"user1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47003515629640 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47003519801780 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:39:11 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.0032982>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"user1"}, "lsid"=>{"id"=><BSON::Binary:0x47003521980400 type=uuid data=0xba0dffba696d4a17...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.002s
+Completed 404 Not Found in 29ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"user1"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47003521980400 type=uuid data=0xba0dffba696d4a17...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.019s
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:41:45 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"user1", "signin"=>{"username"=>"user1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47108704060800 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47108703864040 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-02-28 11:41:45 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.015054182>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"user1"}, "lsid"=>{"id"=><BSON::Binary:0x47108703626280 type=uuid data=0x01b582f788814c22...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.016s
+Completed 404 Not Found in 56ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"user1"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:45:05 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"user1", "signin"=>{"username"=>"user1"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"user1"}, "lsid"=>{"id"=><BSON::Binary:0x47108703626280 type=uuid data=0x01b582f788814c22...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"user1"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+Started POST "/signin/" for 127.0.0.1 at 2019-02-28 12:45:12 +0100
+Processing by SigninController#create as HTML
+  Parameters: {"username"=>"asd", "signin"=>{"username"=>"asd"}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"asd"}, "lsid"=>{"id"=><BSON::Binary:0x47108703626280 type=uuid data=0x01b582f788814c22...>}}
+MONGODB | localhost:27017 | chat_app_v2_development.find | SUCCEEDED | 0.000s
+Completed 404 Not Found in 9ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:username=>"asd"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/signin_controller.rb:5:in `create'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47108703626280 type=uuid data=0x01b582f788814c22...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
