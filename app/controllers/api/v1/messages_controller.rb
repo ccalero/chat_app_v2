@@ -4,41 +4,20 @@ module Api
       before_action :authorize_access_request!, except: [:show, :index]
       before_action :set_message, only: [:show, :update, :destroy]
 
-      # GET /messages
-      def index
-        @messages = Message.all
 
-        render json: @messages
-      end
-
-      # GET /messages/1
-      def show
-        render json: @message
-      end
-
-      # POST /messages
+      # POST /messages.json
       def create
-        @message = Message.new(message_params)
-
-        if @message.save
-          render json: @message, status: :created, location: @message
-        else
-          render json: @message.errors, status: :unprocessable_entity
+        @message = Message.new(
+          message_params
+            .merge('room':current_room)
+            .merge('sender_user':current_user.username))
+        respond_to do |format|
+          if @message.save!
+            render json: @message, status: :created, location: @message
+          else
+            render json: @message.errors, status: :unprocessable_entity
+          end
         end
-      end
-
-      # PATCH/PUT /messages/1
-      def update
-        if @message.update(message_params)
-          render json: @message
-        else
-          render json: @message.errors, status: :unprocessable_entity
-        end
-      end
-
-      # DELETE /messages/1
-      def destroy
-        @message.destroy
       end
 
       private
@@ -47,9 +26,13 @@ module Api
           @message = Message.find(params[:id])
         end
 
-        # Only allow a trusted parameter "white list" through.
+        # Never trust parameters from the scary internet, only allow the white list through.
         def message_params
-          params.require(:message).permit(:content, :user_id, :room_id)
+          params.require(:message).permit(:content, :room, :sender_user)
+        end
+
+        def current_room
+          Room.find_by(id: params[:message][:room_id])
         end
     end
   end

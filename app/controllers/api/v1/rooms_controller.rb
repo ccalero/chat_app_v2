@@ -7,13 +7,12 @@ module Api
       # GET /rooms
       def index
         @rooms = Room.all
-
         render json: @rooms
       end
 
       # GET /rooms/1
       def show
-        render json: @room
+        render json: @room.messages.last(20)
       end
 
       # POST /rooms
@@ -27,20 +26,6 @@ module Api
         end
       end
 
-      # PATCH/PUT /rooms/1
-      def update
-        if @room.update(room_params)
-          render json: @room
-        else
-          render json: @room.errors, status: :unprocessable_entity
-        end
-      end
-
-      # DELETE /rooms/1
-      def destroy
-        @room.destroy
-      end
-
       private
         # Use callbacks to share common setup or constraints between actions.
         def set_room
@@ -49,7 +34,7 @@ module Api
 
         # Only allow a trusted parameter "white list" through.
         def room_params
-          params.require(:room).permit(:name)
+          params.require(:room).permit(:title)
         end
     end
   end
