@@ -12,7 +12,10 @@ module Api
 
       # GET /rooms/1
       def show
-        render json: @room.messages.last(20)
+        render :json => {
+            :messages => @room.messages.last(20),
+            :room => @room.as_json(except: :messages)
+          }
       end
 
       # POST /rooms

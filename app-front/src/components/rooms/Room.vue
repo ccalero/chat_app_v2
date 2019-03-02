@@ -1,20 +1,12 @@
 <template>
   <div class="">
-    <h1>Chat Room {{room_id}} <font-awesome-icon icon="coffee" /></h1>
+    <h1>{{room.title}} </h1>
     <div id="chatbox">
       <div id="list_messages_-id-">
 
-        <article class="chat-line">
-          <span class="speaker">User1: </span>
-          <span class="body">Content</span>
-        </article>
-        <article class="chat-line">
-          <span class="speaker">User1: </span>
-          <span class="body">Content</span>
-        </article>
-        <article class="chat-line">
-          <span class="speaker">User1: </span>
-          <span class="body">Content</span>
+        <article class="chat-line" v-for="message in messages" :key="message._id.$oid" :message="message">
+          <span class="speaker">{{ message.username }} </span>
+          <span class="body">{{ message.content }}</span>
         </article>
 
       </div>
@@ -39,13 +31,15 @@ export default {
       room_id: this.$route.params.id,
       room: {},
       box_message: '',
+      messages: [],
     }
   },
   created() {
-    this.$http.get('http://localhost:3000/api/v1/room/' + this.room_id)
+    this.$http.get('http://localhost:3000/api/v1/rooms/' + this.room_id)
       .then(response => {
         if (response.status === 200) {
-          console.log(response)
+          this.messages = response.body.messages
+          this.room = response.body.room
         }
       })
       .catch(error => {
