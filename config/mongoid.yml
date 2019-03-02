@@ -5,7 +5,7 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: chat_app_v2_development
+      database: chat_app_development
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
@@ -155,11 +155,11 @@ development:
 test:
   clients:
     default:
-      database: chat_app_v2_test
+      database: chat_app_test
       hosts:
         - localhost:27017
       options:
+        raise_not_found_error: false
         read:
           mode: :primary
         max_pool_size: 1
-        raise_not_found_error: false

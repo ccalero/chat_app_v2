@@ -2,8 +2,8 @@ import router from '../../router'
 
 // URL and endpoint constants
 const API_URL = 'http://localhost:3000/'
-const SIGNIN_URL = API_URL + 'signin/'
-const SIGNUP_URL = API_URL + 'signup/'
+const SIGNIN_URL = API_URL + 'auth/login/'
+const SIGNUP_URL = API_URL + 'auth/signup/'
 
 export default {
 

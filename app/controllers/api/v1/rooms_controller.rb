@@ -1,17 +1,20 @@
 module Api
   module V1
     class RoomsController < ApplicationController
-      before_action :authorize_access_request!, except: [:show, :index, :create]
-      before_action :set_room, only: [:show, :update, :destroy]
 
       # GET /rooms
       def index
         @rooms = Room.all
-        render json: @rooms
+        render json: @rooms.as_json(except: :messages)
       end
 
       # GET /rooms/1
       def show
+        # Avoid error in tests
+        if !@room
+          @room = Room.find_by(id: params[:id])
+        end
+
         render :json => {
             :messages => @room.messages.last(20),
             :room => @room.as_json(except: :messages)
@@ -30,10 +33,6 @@ module Api
       end
 
       private
-        # Use callbacks to share common setup or constraints between actions.
-        def set_room
-          @room = Room.find(params[:id])
-        end
 
         # Only allow a trusted parameter "white list" through.
         def room_params

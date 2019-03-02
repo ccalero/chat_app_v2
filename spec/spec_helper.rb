@@ -13,8 +13,8 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'rails/mongoid'
 require 'mongoid-rspec'
-
 RSpec.configure do |config|
   config.include Mongoid::Matchers
   # rspec-expectations config goes here. You can use an alternate

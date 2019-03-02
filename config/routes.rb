@@ -1,23 +1,22 @@
 Rails.application.routes.draw do
-  root to: "home#index"
 
-  get 'refresh/create'
-  get 'signin/create'
-
-  post 'refresh', controller: :refresh, action: :create
-  post 'signin', controller: :signin, action: :create
-  post 'signup', controller: :signup, action: :create
-  delete 'signin', controller: :signin, action: :destroy
+  # Auth
+  post 'auth/login', controller: :auth, action: :login
+  post 'auth/signup', controller: :auth, action: :signup
 
   namespace :api do
     namespace :v1 do
-      resources :messages
-      resources :rooms
-      resources :users
+      # Rooms
+      get 'rooms', controller: :rooms, action: :index
+      get 'rooms/:id', controller: :rooms, action: :show
+      post 'rooms', controller: :rooms, action: :create
+
+      # Users
+      post 'users', controller: :users, action: :create
+
+      # ActionCable
       mount ActionCable.server => '/cable'
     end
   end
-
-
 
 end
