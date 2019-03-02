@@ -2,19 +2,16 @@
   <div class="">
     <h1>{{room.title}} </h1>
     <div id="chatbox">
-      <div id="list_messages_-id-">
-
+      <div id="list_messages">
         <article class="chat-line" v-for="message in messages" :message="message">
           <span class="speaker">{{ message.sender_user }} </span>
           <span class="body">{{ message.content }}</span>
         </article>
-
       </div>
     </div>
     <div id="form_mssg" class="type_msg">
       <div class="input_msg_write">
         <input id="message_content" v-model="box_message" @keyup.enter="send_message" placeholder="Say something..." class="write_msg">
-        <input id="message_room_id" type="hidden" value="-id-" >
         <button @click="send_message" ref="sendMessage" class="msg_send_btn">
         >
         </button>
@@ -34,13 +31,13 @@ export default {
     }
   },
   channels: {
-        RoomChannel: {
+        'RoomChannel': {
             connected() {
                 console.log('I am connected.');
             },
             received(data) {
               this.messages.push({sender_user: data['sender_user'], content: data['message']})
-              var container = this.$el.querySelector("#list_messages_-id-")
+              var container = this.$el.querySelector("#list_messages")
               container.scrollTop = container.scrollHeight
             }
         }
@@ -73,7 +70,7 @@ export default {
     }
   },
   mounted() {
-      this.$cable.subscribe({ channel: 'RoomChannel' });
+      this.$cable.subscribe({ channel: 'RoomChannel', room_id: this.room_id});
   }
 }
 </script>
