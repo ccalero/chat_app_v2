@@ -70,7 +70,6 @@ export default {
         { room: { title: this.newRoom.name } },
         { headers: auth.getAuthHeader() })
         .then(response => {
-          debugger
           this.rooms.push(response.body)
           this.newRoom = ''
         })
