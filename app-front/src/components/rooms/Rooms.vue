@@ -30,6 +30,7 @@
 </template>
 
 <script>
+import auth from '../../backend/auth'
 export default {
   name: 'Rooms',
   data () {
@@ -64,13 +65,17 @@ export default {
       if (!value) {
         return
       }
-      this.$http.secured.post('/api/v1/rooms/', { room: { name: this.newRoom.name } })
+      this.$http.post(
+        'http://localhost:3000/api/v1/rooms',
+        { room: { title: this.newRoom.name } },
+        { headers: auth.getAuthHeader() })
         .then(response => {
-          this.rooms.push(response.data)
+          debugger
+          this.rooms.push(response.body)
           this.newRoom = ''
         })
         .catch(error => this.setError(error, 'Cannot create room'))
-    },
+    }
   }
 }
 </script>

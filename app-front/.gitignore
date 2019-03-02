@@ -8,6 +8,7 @@ node_modules/
 # Editor directories and files
 .idea
 .vscode
+.byebug_history
 *.suo
 *.ntvs*
 *.njsproj

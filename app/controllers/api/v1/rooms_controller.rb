@@ -1,7 +1,7 @@
 module Api
   module V1
     class RoomsController < ApplicationController
-      before_action :authorize_access_request!, except: [:show, :index]
+      before_action :authorize_access_request!, except: [:show, :index, :create]
       before_action :set_room, only: [:show, :update, :destroy]
 
       # GET /rooms
@@ -23,7 +23,7 @@ module Api
         @room = Room.new(room_params)
 
         if @room.save
-          render json: @room, status: :created, location: @room
+          render json: @room, status: :created
         else
           render json: @room.errors, status: :unprocessable_entity
         end
