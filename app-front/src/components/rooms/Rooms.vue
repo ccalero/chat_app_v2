@@ -40,7 +40,10 @@ export default {
       editedRoom: ''
     }
   },
-  mounted() {
+  created() {
+    if (!localStorage.signedIn) {
+      this.$router.replace('/')
+    } else {
       this.$http.get('http://localhost:3000/api/v1/rooms')
         .then(response => {
           if (response.status === 200) {
@@ -50,14 +53,6 @@ export default {
         .catch(error => {
           console.error(error)
         })
-    },
-  created () {
-    if (!localStorage.signedIn) {
-      this.$router.replace('/')
-    } else {
-      this.$http.secured.get('/api/v1/rooms')
-        .then(response => { this.rooms = response.data })
-        .catch(error => this.setError(error, 'Something went wrong'))
     }
   },
   methods: {
@@ -70,28 +65,12 @@ export default {
         return
       }
       this.$http.secured.post('/api/v1/rooms/', { room: { name: this.newRoom.name } })
-
         .then(response => {
           this.rooms.push(response.data)
           this.newRoom = ''
         })
         .catch(error => this.setError(error, 'Cannot create room'))
     },
-    removeRoom (room) {
-      this.$http.secured.delete(`/api/v1/rooms/${room.id}`)
-        .then(response => {
-          this.rooms.splice(this.rooms.indexOf(room), 1)
-        })
-        .catch(error => this.setError(error, 'Cannot delete room'))
-    },
-    editRoom (room) {
-      this.editedRoom = room
-    },
-    updateRoom (room) {
-      this.editedRoom = ''
-      this.$http.secured.patch(`/api/v1/rooms/${room.id}`, { room: { title: room.name } })
-        .catch(error => this.setError(error, 'Cannot update room'))
-    }
   }
 }
 </script>

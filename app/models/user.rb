@@ -10,6 +10,7 @@
 class User
   include Mongoid::Document
   field :username, type: String
+  field :token, type: String
   # embeds_many :messages
 
   # Validations

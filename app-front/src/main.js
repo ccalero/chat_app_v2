@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
+import ActionCableVue from 'actioncable-vue';
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -11,6 +12,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(BootstrapVue)
 Vue.use(VueResource)
+
+Vue.use(ActionCableVue, {
+    debug: true,
+    debugLevel: 'all',
+    connectionUrl: 'ws://localhost:3000/api/v1/cable?token='+localStorage.getItem('token')
+});
 
 Vue.config.productionTip = false
 

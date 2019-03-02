@@ -4,8 +4,8 @@
     <div id="chatbox">
       <div id="list_messages_-id-">
 
-        <article class="chat-line" v-for="message in messages" :key="message._id.$oid" :message="message">
-          <span class="speaker">{{ message.username }} </span>
+        <article class="chat-line" v-for="message in messages" :message="message">
+          <span class="speaker">{{ message.sender_user }} </span>
           <span class="body">{{ message.content }}</span>
         </article>
 
@@ -16,8 +16,7 @@
         <input id="message_content" v-model="box_message" @keyup.enter="send_message" placeholder="Say something..." class="write_msg">
         <input id="message_room_id" type="hidden" value="-id-" >
         <button @click="send_message" ref="sendMessage" class="msg_send_btn">
-          <i class="fas fa-paper-plane"></i>
-          <font-awesome-icon icon="paper-plane" />
+        >
         </button>
       </div>
     </div>
@@ -34,6 +33,18 @@ export default {
       messages: [],
     }
   },
+  channels: {
+        RoomChannel: {
+            connected() {
+                console.log('I am connected.');
+            },
+            received(data) {
+              this.messages.push({sender_user: data['sender_user'], content: data['message']})
+              var container = this.$el.querySelector("#list_messages_-id-")
+              container.scrollTop = container.scrollHeight
+            }
+        }
+  },
   created() {
     this.$http.get('http://localhost:3000/api/v1/rooms/' + this.room_id)
       .then(response => {
@@ -49,15 +60,20 @@ export default {
   methods: {
     send_message: function(event){
         if(this.box_message != ""){
-          this.room_id = $('#message_room_id').val()
-          App.room.speak({
-            message: this.box_message,
-            room_id: this.room_id,
+          this.$cable.perform({
+            channel: 'RoomChannel',
+            action: 'speak',
+            data: {
+              message: this.box_message,
+              room_id: this.room_id,
+            }
           });
-          this.box_message = '';
         }
         event.preventDefault();
-      }
+    }
+  },
+  mounted() {
+      this.$cable.subscribe({ channel: 'RoomChannel' });
   }
 }
 </script>
