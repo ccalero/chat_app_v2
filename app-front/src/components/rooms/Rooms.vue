@@ -7,7 +7,7 @@
     <b-modal id="add_room" ref="hide-footer" title="Add a new room">
       <div class="form-group">
           <label for="exampleInputEmail1">Name Room</label>
-          <input type="text" class="form-control" placeholder="Type room name" v-model="newRoom.name" >
+          <input @keyup.enter="addRoom" type="text" class="form-control" placeholder="Type room name" v-model="newRoom.name" >
       </div>
       <div slot="modal-footer" class="w-100">
         <button @click="addRoom()" class="btn btn-primary float-right">Submit</button>
@@ -18,6 +18,7 @@
       <b-button v-b-modal.add_room variant="success" style="margin-bottom: 1%;">Add a new room</b-button>
       <b-list-group-item
         v-for="room in rooms"
+        :key="room._id.$oid"
         :room="room"
         :to="{ name: 'room', params: {id: room._id.$oid } }">
           {{ room.title }}

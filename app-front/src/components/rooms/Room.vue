@@ -108,6 +108,7 @@ export default {
               room_id: this.room_id,
             }
           });
+          this.box_message = ""
         }
         event.preventDefault();
     }

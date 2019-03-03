@@ -5,6 +5,7 @@ module ApplicationCable
 
     def connect
       token = request.params[:token]
+      token = token.gsub ' ', '+'
       self.current_user = User.find_by(token: token)
     end
 
