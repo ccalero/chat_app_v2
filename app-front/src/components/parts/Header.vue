@@ -1,10 +1,9 @@
 <template>
     <b-navbar type="dark" variant="dark">
-      <b-navbar-nav>
-        <b-nav-item :to="{ name: 'signin' }" v-if="!signedIn()">Sign in</b-nav-item>
-        <b-nav-item :to="{ name: 'signup' }" v-if="!signedIn()">Sign Up</b-nav-item>
-        <b-nav-item :to="{ name: 'rooms' }" v-if="signedIn()">Rooms</b-nav-item>
-        <b-nav-item href="#" @click.prevent="signOut" v-if="signedIn()" right>Sign out</b-nav-item>
+      <b-navbar-brand>Chat App</b-navbar-brand>
+      <b-navbar-nav v-if="signedIn()">
+        <b-nav-item :to="{ name: 'rooms' }">Rooms</b-nav-item>
+        <b-nav-item href="#" @click.prevent="signOut">Sign out</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
 </template>

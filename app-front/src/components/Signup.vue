@@ -10,6 +10,9 @@
           required
           placeholder="Enter username" />
       </b-form-group>
+      <b-form-text>
+        Already have a user? <b-link :to="{ name: 'signin' }">Login now!</b-link>
+      </b-form-text>
       <b-button class="m-3" type="submit" variant="primary">Create</b-button>
     </b-form>
     <br>
