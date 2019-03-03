@@ -37,6 +37,9 @@ class AuthController < ApplicationController
                       secure: Rails.env.production?)
     @user.token = tokens[:csrf]
     @user.save()
-    render json: { csrf: tokens[:csrf] }
+    render json: {
+      csrf: tokens[:csrf] ,
+      username: @user.username
+    }
   end
 end

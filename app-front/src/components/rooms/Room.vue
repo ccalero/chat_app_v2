@@ -29,7 +29,9 @@
               <span class="msg-content">Hey there! What's up? </span>
               <span class="msg-sender">You - 3:22 pm</span>
           </div>
-          <div class="balon2" v-for="message in messages" :message="message">
+          <div
+            :class="[ current_user==message.sender_user  ? 'balon1' : 'balon2' ]"
+            v-for="message in messages" :message="message">
               <span class="msg-content">{{ message.content }}</span>
               <span class="msg-sender">{{ message.sender_user }} - {{ message.date }} </span>
           </div>
@@ -62,6 +64,7 @@
   </div>
 </template>
 <script>
+import auth from '../../backend/auth'
 export default {
   data () {
     return {
@@ -69,6 +72,7 @@ export default {
       room: {},
       box_message: '',
       messages: [],
+      current_user: localStorage.username
     }
   },
   channels: {

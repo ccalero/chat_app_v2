@@ -18,6 +18,8 @@ export default {
       .then(response => {
         if (response.status === 200) {
           localStorage.setItem('token', response.body.csrf)
+          // Only used to change chat styles
+          localStorage.setItem('username', response.body.username)
           localStorage.setItem('signedIn', true)
           this.user.authenticated = true
           if (redirect) {
@@ -35,6 +37,8 @@ export default {
       .then(response => {
         if (response.status === 200) {
           localStorage.setItem('token', response.body.csrf)
+          // Only used to change chat styles
+          localStorage.setItem('username', response.body.username)
           localStorage.setItem('signedIn', true)
           this.user.authenticated = true
           if (redirect) {
