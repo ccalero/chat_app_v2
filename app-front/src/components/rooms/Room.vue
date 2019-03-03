@@ -1,30 +1,9 @@
-<!-- <template>
-  <div class="">
-    <h1>{{room.title}} </h1>
-    <div id="chatbox">
-      <div id="list_messages">
-        <article class="chat-line" v-for="message in messages" :message="message">
-          <span class="speaker">{{ message.sender_user }} </span>
-          <span class="body">{{ message.content }}</span>
-        </article>
-      </div>
-    </div>
-    <div id="form_mssg" class="type_msg">
-      <div class="input_msg_write">
-        <input id="message_content" v-model="box_message" @keyup.enter="send_message" placeholder="Say something..." class="write_msg">
-        <button @click="send_message" ref="sendMessage" class="msg_send_btn">
-        >
-        </button>
-      </div>
-    </div>
-  </div>
-</template> -->
 <template>
   <div class="box-chat card border-0 rounded">
       <div class="card-header">
         <h3>{{room.title}}</h3>
       </div>
-      <div class="card box-msg">
+      <div class="card box-msg" v-chat-scroll>
           <div class="balon1">
               <span class="msg-content">Hey there! What's up? </span>
               <span class="msg-sender">You - 3:22 pm</span>
