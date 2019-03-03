@@ -12,8 +12,9 @@
 class Message
   include Mongoid::Document
   field :content, type: String
-  # field :created_at, :type => Time, default: Time.now
+  field :created_at, :type => Time, default: Time.now
   field :sender_user, type: String
+  field :date, type: String
   embedded_in  :room
   # embedded_in  :user
 
@@ -23,5 +24,9 @@ class Message
   validates :room, presence: true
   # validates :user, presence: true
   # validates :created_at, presence: true
+
+  def date
+    self.created_at.strftime("%H:%M")
+  end
 
 end

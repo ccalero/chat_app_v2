@@ -31,7 +31,7 @@
           </div>
           <div class="balon2" v-for="message in messages" :message="message">
               <span class="msg-content">{{ message.content }}</span>
-              <span class="msg-sender">{{ message.sender_user }} - 3:23 pm</span>
+              <span class="msg-sender">{{ message.sender_user }} - {{ message.date }} </span>
           </div>
       </div>
       <div class="card-footer">
@@ -77,7 +77,7 @@ export default {
                 console.log('I am connected.');
             },
             received(data) {
-              this.messages.push({sender_user: data['sender_user'], content: data['message']})
+              this.messages.push(data.message)
             }
         }
   },

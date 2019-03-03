@@ -11,10 +11,11 @@ class RoomChannel < ApplicationCable::Channel
     room_id = data["room_id"]
     message = data['message']
     room = Room.find_by(id: room_id)
-    Message.create! room:room, content: message, sender_user: current_user.username
+    time_now = Time.now.to_i.to_s
+    msg = Message.create! room:room, content: message, sender_user: current_user.username
 
     ActionCable.server.broadcast "room_channel_#{room_id}",{
-      message: message,
+      message: msg,
       room_id: room_id,
       sender_user: current_user.username,
     }
