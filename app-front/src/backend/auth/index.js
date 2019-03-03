@@ -26,27 +26,25 @@ export default {
         }
       })
       .catch(error => {
-        alert('Usuario no encontrado')
-        console.error(error)
+        console.log(error)
       })
   },
 
   signup (context, creds, redirect) {
     context.$http.post(SIGNUP_URL, creds)
-    .then(response => {
-      if (response.status === 200) {
-        localStorage.setItem('token', response.body.csrf)
-        localStorage.setItem('signedIn', true)
-        this.user.authenticated = true
-        if (redirect) {
-          router.go(redirect)
+      .then(response => {
+        if (response.status === 200) {
+          localStorage.setItem('token', response.body.csrf)
+          localStorage.setItem('signedIn', true)
+          this.user.authenticated = true
+          if (redirect) {
+            router.go(redirect)
+          }
         }
-      }
-    })
-    .catch(error => {
-      alert('Fallo')
-      console.error(error)
-    })
+      })
+      .catch(error => {
+        console.log(error)
+      })
   },
 
   // To log out, we just need to remove the token

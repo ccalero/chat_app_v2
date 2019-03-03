@@ -1,31 +1,29 @@
 <template>
   <div class="">
-    <h1>Rooms</h1>
-    <div class="alert alert-danger" role="alert" v-if="error">
-      {{ error }}
-    </div>
+    <h1>List Rooms</h1>
+    <b-alert show variant="danger" v-if="error">{{ error }}</b-alert>
 
-    <h3 class="">Add a new room</h3>
-    <form action="" @submit.prevent="addRoom">
+
+    <b-modal id="add_room" ref="hide-footer" title="Add a new room">
       <div class="form-group">
-        <label for="exampleInputEmail1">Name Room</label>
-        <input class="form-control" v-model="newRoom.name" />
+          <label for="exampleInputEmail1">Name Room</label>
+          <input type="text" class="form-control" placeholder="Type room name" v-model="newRoom.name" >
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+      <div slot="modal-footer" class="w-100">
+        <button @click="addRoom()" class="btn btn-primary float-right">Submit</button>
+      </div>
+    </b-modal>
 
-    <hr class="border border-grey-light my-6" />
-    <div class="row">
-      <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-          <ul>
-            <li class="list-group-item list-group-item-action" v-for="room in rooms" :key="room._id.$oid" :room="room">
-              <router-link :to="{ name: 'room', params: {id: room._id.$oid } }">{{ room.title }}</router-link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <b-list-group style="margin: 2%;">
+      <b-button v-b-modal.add_room variant="success" style="margin-bottom: 1%;">Add a new room</b-button>
+      <b-list-group-item
+        v-for="room in rooms"
+        :room="room"
+        :to="{ name: 'room', params: {id: room._id.$oid } }">
+          {{ room.title }}
+      </b-list-group-item>
+    </b-list-group>
+
   </div>
 </template>
 
@@ -71,7 +69,7 @@ export default {
         { headers: auth.getAuthHeader() })
         .then(response => {
           this.rooms.push(response.body)
-          this.newRoom = ''
+          this.$router.push({ name: 'room', params: { id: response.body._id.$oid } })
         })
         .catch(error => this.setError(error, 'Cannot create room'))
     }

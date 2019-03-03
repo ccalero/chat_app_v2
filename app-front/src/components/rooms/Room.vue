@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="">
     <h1>{{room.title}} </h1>
     <div id="chatbox">
@@ -18,8 +18,49 @@
       </div>
     </div>
   </div>
-</template>
+</template> -->
+<template>
+  <div class="box-chat card border-0 rounded">
+      <div class="card-header">
+        <h3>{{room.title}}</h3>
+      </div>
+      <div class="card box-msg">
+          <div class="balon1">
+              <span class="msg-content">Hey there! What's up? </span>
+              <span class="msg-sender">You - 3:22 pm</span>
+          </div>
+          <div class="balon2" v-for="message in messages" :message="message">
+              <span class="msg-content">{{ message.content }}</span>
+              <span class="msg-sender">{{ message.sender_user }} - 3:23 pm</span>
+          </div>
+      </div>
+      <div class="card-footer">
+          <b-form @submit="send_message" >
+              <b-row>
+                  <div class="col-9 m-0 p-1">
 
+                    <b-form-input
+                      id="message_content"
+                      type="text"
+                      v-model="box_message"
+                      required
+                      placeholder="Type a message..." />
+
+                  </div>
+                  <div class="col-3 m-0 p-1">
+                      <button
+                        type="submit"
+                        class="btn btn-outline-secondary rounded border w-100"
+                        title="Send!"
+                        style="padding-right: 16px;">
+                          Send<i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                  </div>
+              </b-row>
+          </b-form>
+      </div>
+  </div>
+</template>
 <script>
 export default {
   data () {
@@ -37,22 +78,24 @@ export default {
             },
             received(data) {
               this.messages.push({sender_user: data['sender_user'], content: data['message']})
-              var container = this.$el.querySelector("#list_messages")
-              container.scrollTop = container.scrollHeight
             }
         }
   },
   created() {
-    this.$http.get('http://localhost:3000/api/v1/rooms/' + this.room_id)
-      .then(response => {
-        if (response.status === 200) {
-          this.messages = response.body.messages
-          this.room = response.body.room
-        }
-      })
-      .catch(error => {
-        console.error(error)
-      })
+    if (!localStorage.signedIn) {
+      this.$router.replace('/')
+    } else {
+      this.$http.get('http://localhost:3000/api/v1/rooms/' + this.room_id)
+        .then(response => {
+          if (response.status === 200) {
+            this.messages = response.body.messages
+            this.room = response.body.room
+          }
+        })
+        .catch(error => {
+          console.error(error)
+        })
+      }
   },
   methods: {
     send_message: function(event){
@@ -74,3 +117,7 @@ export default {
   }
 }
 </script>
+
+<style>
+  @import '../../assets/styles/room_chat.css';
+</style>

@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
+  <div class="">
     <Header/>
-    <div class="container">
-      <div class="content">
-        <router-view></router-view>
-        <Footer/>
-      </div>
-    </div>
+    <b-container>
+      <b-row class="justify-content-md-center">
+          <div id="app" style="width: 100%;">
+            <router-view></router-view>
+            <Footer/>
+          </div>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
@@ -23,7 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  @import './assets/styles/custom.scss';
-</style>

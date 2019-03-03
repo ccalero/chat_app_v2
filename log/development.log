@@ -8929,3 +8929,2306 @@ RoomChannel is transmitting the subscription confirmation
 RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
 MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x47088921320000 type=uuid data=0x0d1ef732a5f541b6...>}, {"id"=><BSON::Binary:0x47088915224520 type=uuid data=0x0bf0292921574018...>}]}
 MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.001s
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 11:18:00 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x47265020303400 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x47265020118140 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-03-03 10:18:00 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.012362402>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.006s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"CN8cgqJ+I2WpSbdoR1bP8v9xmY1p1GR8...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.006s
+Completed 200 OK in 52ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:18:01 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.006s
+Completed 200 OK in 67ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:18:08 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 20ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:18:37 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.012s
+Completed 200 OK in 39ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:18:48 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 30ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:20:17 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 15ms (Views: 0.9ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:20:45 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:20:57 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 22ms (Views: 3.1ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:21:07 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:21:09 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 23ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:21:14 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.008s
+Completed 200 OK in 31ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:21:26 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.010s
+Completed 200 OK in 42ms (Views: 0.7ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:22:43 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.011s
+Completed 200 OK in 33ms (Views: 1.8ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:23:02 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.009s
+Completed 200 OK in 23ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:24:36 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 19ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:25:10 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:25:19 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"Sala nueva"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\ASala\ nueva$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bab8f6e955216ebda73f7'), "title"=>"Sala nueva"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.005s
+Completed 201 Created in 16ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:25:43 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 14ms (Views: 0.2ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:25:49 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"sa"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Asa$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7babad6e955216ebda73f8'), "title"=>"sa"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 12ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:28:32 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 28ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:28:32 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 21ms (Views: 0.5ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:28:36 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"sss"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Asss$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bac546e955216ebda73f9'), "title"=>"sss"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 13ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:28:46 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 9ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:29:03 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 0.3ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:29:07 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"aa"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Aaa$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bac736e955216ebda73fa'), "title"=>"aa"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 18ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:29:13 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 50ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:29:59 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 18ms (Views: 0.7ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:30:05 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"sddd"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Asddd$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bacad6e955216ebda73fb'), "title"=>"sddd"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 9ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:30:39 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 20ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:03 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 2.1ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:14 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.008s
+Completed 200 OK in 28ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:36 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:37 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.011s
+Completed 200 OK in 23ms (Views: 1.1ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:41 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 2.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:43 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.0ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:46 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"fff"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Afff$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bad126e955216ebda73fc'), "title"=>"fff"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.002s
+Completed 201 Created in 17ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:31:59 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:32:03 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"fsd"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Afsd$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bad236e955216ebda73fd'), "title"=>"fsd"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.001s
+Completed 201 Created in 11ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:32:53 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 22ms (Views: 0.6ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:32:56 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"asd"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Aasd$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.007s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bad586e955216ebda73fe'), "title"=>"asd"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.000s
+Completed 201 Created in 16ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:33:09 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 30ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:33:11 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 12ms (Views: 0.4ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:33:14 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"sdf"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\Asdf$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bad6a6e955216ebda73ff'), "title"=>"sdf"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.000s
+Completed 201 Created in 6ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms/5c7bad6a6e955216ebda73ff" for 127.0.0.1 at 2019-03-03 11:33:19 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7bad6a6e955216ebda73ff"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7bad6a6e955216ebda73ff')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.8ms)
+
+
+Started GET "/api/v1/cable?token=CN8cgqJ+I2WpSbdoR1bP8v9xmY1p1GR8IjQiI0agUE5WKWufTUk9YnZlLxzXu3lYmgKMDmISxNQby7D+7hdqog==" for 127.0.0.1 at 2019-03-03 11:33:19 +0100
+Started GET "/api/v1/cable/?token=CN8cgqJ+I2WpSbdoR1bP8v9xmY1p1GR8IjQiI0agUE5WKWufTUk9YnZlLxzXu3lYmgKMDmISxNQby7D+7hdqog==" [WebSocket] for 127.0.0.1 at 2019-03-03 11:33:19 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"CN8cgqJ I2WpSbdoR1bP8v9xmY1p1GR8IjQiI0agUE5WKWufTUk9YnZlLxzXu3lYmgKMDmISxNQby7D 7hdqog=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7bad6a6e955216ebda73ff
+Finished "/api/v1/cable/?token=CN8cgqJ+I2WpSbdoR1bP8v9xmY1p1GR8IjQiI0agUE5WKWufTUk9YnZlLxzXu3lYmgKMDmISxNQby7D+7hdqog==" [WebSocket] for 127.0.0.1 at 2019-03-03 11:40:28 +0100
+RoomChannel stopped streaming from room_channel_5c7bad6a6e955216ebda73ff
+Started GET "/api/v1/rooms/5c7bad6a6e955216ebda73ff" for 127.0.0.1 at 2019-03-03 11:40:29 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7bad6a6e955216ebda73ff"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7bad6a6e955216ebda73ff')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 200 OK in 3ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/cable?token=null" for 127.0.0.1 at 2019-03-03 11:40:29 +0100
+Started GET "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 11:40:29 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"null"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7bad6a6e955216ebda73ff
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c7bad6a6e955216ebda73ff"}
+RoomChannel stopped streaming from room_channel_5c7bad6a6e955216ebda73ff
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7bad6a6e955216ebda73ff
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c7bad6a6e955216ebda73ff"}
+RoomChannel stopped streaming from room_channel_5c7bad6a6e955216ebda73ff
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 11:54:10 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"asdf", "auth"=>{"username"=>"asdf"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"asdf"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 10ms (Views: 0.3ms)
+
+
+Finished "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 11:54:10 +0100
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 11:54:17 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"+39fp8E4zKFS8opoNxV8zDVNB/h5Qcbw...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 23ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 11:54:18 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 17ms (Views: 0.9ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 11:55:28 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"sfsdfs", "auth"=>{"username"=>"sfsdfs"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"sfsdfs"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 3ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 11:56:58 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"fasdf232", "auth"=>{"username"=>"fasdf232"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"fasdf232"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 404 Not Found in 12ms (Views: 0.6ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:00:03 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"sdfsd123", "auth"=>{"username"=>"sdfsd123"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"sdfsd123"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 404 Not Found in 3ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:00:22 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"sdf23", "auth"=>{"username"=>"sdf23"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"sdf23"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 2ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:01:53 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"asdf123", "auth"=>{"username"=>"asdf123"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"asdf123"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:02:07 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"1212", "auth"=>{"username"=>"1212"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"1212"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:02:24 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"2323", "auth"=>{"username"=>"2323"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"2323"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms (Views: 0.5ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:02:33 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"23", "auth"=>{"username"=>"23"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"23"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 3ms (Views: 0.3ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:02:53 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"2323", "auth"=>{"username"=>"2323"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"2323"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 404 Not Found in 6ms (Views: 0.3ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:03:00 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"232233", "auth"=>{"username"=>"232233"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"232233"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms (Views: 0.5ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:03:01 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"232233", "auth"=>{"username"=>"232233"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"232233"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 404 Not Found in 3ms (Views: 0.3ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:03:04 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"232233", "auth"=>{"username"=>"232233"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"232233"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 3ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:03:09 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"HosWzzKL7DnebYLRS7/BgM+UH66EC8St...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 0.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:03:10 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 12ms (Views: 4.1ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:05:17 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario1$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 422 Unprocessable Entity in 43ms (Views: 0.8ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:06:54 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario1$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:07:50 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"carlos", "auth"=>{"username"=>"carlos"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Acarlos$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bb5866e955216ebda7400'), "username"=>"carlos"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c7bb5866e955216ebda7400')}, "u"=>{"$set"=>{"token"=>"gXmLF0EA9Iz7ZICFly8WvDGggUA2jvh2...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.000s
+Completed 200 OK in 9ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:07:52 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 17ms (Views: 0.5ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:08:05 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.005s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"wnswShOlBY37PZem7ywhWmFPhIzs9faI...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:08:06 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 0.8ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:09:17 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"sdsd", "auth"=>{"username"=>"sdsd"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"sdsd"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 6ms (Views: 0.4ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:09:27 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"ss", "auth"=>{"username"=>"ss"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"ss"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 2ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:10:10 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"as", "auth"=>{"username"=>"as"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"as"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 404 Not Found in 7ms (Views: 0.6ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:10:45 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"a", "auth"=>{"username"=>"a"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"a"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 2ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:11:03 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"f", "auth"=>{"username"=>"f"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"f"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 13ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:13:17 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"ss", "auth"=>{"username"=>"ss"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"ss"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 3ms (Views: 0.3ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:13:38 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"aa", "auth"=>{"username"=>"aa"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"aa"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 5ms (Views: 0.3ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:13:59 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"s", "auth"=>{"username"=>"s"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"s"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 6ms (Views: 1.6ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:14:38 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"aa", "auth"=>{"username"=>"aa"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"aa"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 404 Not Found in 2ms (Views: 0.1ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:15:47 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"a", "auth"=>{"username"=>"a"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"a"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 10ms (Views: 0.6ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:17:14 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"a", "auth"=>{"username"=>"a"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"a"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 4ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:17:18 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"QxtmMFiVEsHba7ezcNoqO4W4DQNtfQPV...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:17:21 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 17ms (Views: 0.4ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:17:29 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"a", "auth"=>{"username"=>"a"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"a"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 404 Not Found in 2ms (Views: 0.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:19:01 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"a", "auth"=>{"username"=>"a"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"a"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 7ms (Views: 0.9ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:19:07 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario1$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:19:10 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario2", "auth"=>{"username"=>"usuario2"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario2$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 422 Unprocessable Entity in 15ms (Views: 0.7ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:19:28 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario1$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 422 Unprocessable Entity in 11ms (Views: 1.0ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:19:31 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario2", "auth"=>{"username"=>"usuario2"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario2$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 422 Unprocessable Entity in 5ms (Views: 0.2ms)
+
+
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 12:19:34 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"usuario3", "auth"=>{"username"=>"usuario3"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Ausuario3$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bb8466e955216ebda7401'), "username"=>"usuario3"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c7bb8466e955216ebda7401')}, "u"=>{"$set"=>{"token"=>"NcOUz+TMF8tNtSwIp9ljst37mqz8ryE2...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 19ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:19:35 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 22ms (Views: 0.4ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:19:55 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"as", "auth"=>{"username"=>"as"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"as"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 3ms (Views: 0.4ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:19:58 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"asd", "auth"=>{"username"=>"asd"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"asd"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 404 Not Found in 4ms (Views: 0.9ms)
+
+
+Started GET "/api/v1/cable?token=null" for 127.0.0.1 at 2019-03-03 12:20:25 +0100
+Started GET "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 12:20:25 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"null"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:20:34 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"vbXR/dR6ivaoDjfkaKdJ6RBSNsdzT88w...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 0.2ms)
+
+
+Finished "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 12:20:34 +0100
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:20:35 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 16ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:22:17 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:22:43 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:22:50 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:22:53 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 23ms (Views: 1.2ms)
+
+
+Started POST "/auth/login/" for 127.0.0.1 at 2019-03-03 12:22:59 +0100
+Processing by AuthController#login as HTML
+  Parameters: {"username"=>"usuario1", "auth"=>{"username"=>"usuario1"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>"usuario1"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c4e31376e95525108236f5e')}, "u"=>{"$set"=>{"token"=>"ID0LstBlw+wPX36ZWndVYAyK/ANMtISg...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.006s
+Completed 200 OK in 28ms (Views: 2.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:23:00 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.015s
+Completed 200 OK in 29ms (Views: 1.3ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:23:23 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 21ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:23:43 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:24:14 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:25:28 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:25:33 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 15ms (Views: 0.8ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:27:11 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:27:13 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.5ms)
+
+
+Started POST "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:27:40 +0100
+Processing by Api::V1::RoomsController#create as HTML
+  Parameters: {"room"=>{"title"=>"11"}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"title"=>/\A11$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"rooms", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bba2c6e955216ebda7402'), "title"=>"11"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.003s
+Completed 201 Created in 13ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms/5c7bba2c6e955216ebda7402" for 127.0.0.1 at 2019-03-03 12:27:40 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7bba2c6e955216ebda7402"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7bba2c6e955216ebda7402')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 4ms (Views: 1.0ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 12:27:40 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:27:40 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7bba2c6e955216ebda7402
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 12:27:44 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c7bba2c6e955216ebda7402"}
+RoomChannel stopped streaming from room_channel_5c7bba2c6e955216ebda7402
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 17ms (Views: 0.7ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:29:17 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 15ms (Views: 2.4ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:31:57 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:31:58 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 12:31:58 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:31:58 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 10.3ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:54:04 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.6ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:54:25 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Completed 200 OK in 9ms (Views: 1.5ms)
+
+
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:54:48 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:54:48 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 10.0ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 12:54:48 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:54:48 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:55:27 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.013s
+Completed 200 OK in 45ms (Views: 6.8ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:56:12 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.3ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:56:16 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 15ms (Views: 1.9ms)
+
+
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:56:54 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:56:55 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 12:56:55 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:56:55 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:59:35 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 12:59:36 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.6ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 12:59:36 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 12:59:36 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:01:49 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:01:50 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 12ms (Views: 1.7ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:01:50 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:01:50 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:02:11 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+Completed 200 OK in 28ms (Views: 12.9ms)
+
+
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:03:09 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:03:10 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:03:10 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:03:10 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:03:22 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:03:23 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:03:23 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:03:23 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:05:38 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:05:39 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 5.0ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:05:39 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:05:39 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:06:48 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:06:50 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.007s
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:06:50 +0100
+Completed 200 OK in 14ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:06:50 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:08:15 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:08:16 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:08:16 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:08:16 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 18ms (Views: 3.2ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:11:50 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:11:51 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 2.7ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:11:51 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:11:51 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.006s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:14:18 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.006s
+Completed 200 OK in 32ms (Views: 3.9ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:21 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:14:22 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:14:22 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:22 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:14:31 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 2.2ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:32 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:14:33 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:14:33 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:33 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+Completed 200 OK in 13ms (Views: 3.9ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:43 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:14:44 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 7ms (Views: 1.7ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:14:44 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:14:44 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:15:01 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 26ms (Views: 7.9ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:15:09 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.007s
+Completed 200 OK in 56ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:15:58 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}]: /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Completed 200 OK in 32ms (Views: 26.1ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:17:47 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+Completed 200 OK in 27ms (Views: 0.6ms)
+
+
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:18:27 +0100
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:18:28 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.008s
+Completed 200 OK in 28ms (Views: 4.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:18:32 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:18:35 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:18:35 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:18:35 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+Completed 200 OK in 15ms (Views: 9.0ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:18:41 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 13ms (Views: 3.7ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c7babad6e955216ebda73f8" for 127.0.0.1 at 2019-03-03 13:18:43 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7babad6e955216ebda73f8"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7babad6e955216ebda73f8')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7babad6e955216ebda73f8
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:18:58 +0100
+RoomChannel stopped streaming from room_channel_5c7babad6e955216ebda73f8
+Started GET "/api/v1/rooms/5c7babad6e955216ebda73f8" for 127.0.0.1 at 2019-03-03 13:18:59 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7babad6e955216ebda73f8"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7babad6e955216ebda73f8')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 3ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:18:59 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:18:59 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7babad6e955216ebda73f8
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:19:19 +0100
+RoomChannel stopped streaming from room_channel_5c7babad6e955216ebda73f8
+Started GET "/api/v1/rooms/5c7babad6e955216ebda73f8" for 127.0.0.1 at 2019-03-03 13:19:20 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7babad6e955216ebda73f8"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7babad6e955216ebda73f8')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+Started GET "/api/v1/cable?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" for 127.0.0.1 at 2019-03-03 13:19:20 +0100
+Started GET "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:19:20 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"ID0LstBlw wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.1ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7babad6e955216ebda73f8
+Finished "/api/v1/cable/?token=ID0LstBlw+wPX36ZWndVYAyK/ANMtISgElg6HFr4tPQiaoq0Nap3JJAxWtWlrmyE7Uki32YxHdf9AIWlvdXgmQ==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:19:37 +0100
+RoomChannel stopped streaming from room_channel_5c7babad6e955216ebda73f8
+Started GET "/api/v1/cable?token=null" for 127.0.0.1 at 2019-03-03 13:19:37 +0100
+Started GET "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 13:19:37 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"null"}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Started POST "/auth/signup/" for 127.0.0.1 at 2019-03-03 13:20:00 +0100
+Processing by AuthController#signup as HTML
+  Parameters: {"username"=>"sd", "auth"=>{"username"=>"sd"}}
+Unpermitted parameter: :auth
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"username"=>/\Asd$/i}, "projection"=>{"_id"=>1}, "limit"=>1, "$readPreference"=>{"mode"=>"primary"}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | chat_app_development.insert | STARTED | {"insert"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}, "documents"=>[{"_id"=>BSON::ObjectId('5c7bc6706e955216ebda7403'), "username"=>"sd"}]}
+MONGODB | localhost:27017 | chat_app_development.insert | SUCCEEDED | 0.000s
+MONGODB | localhost:27017 | chat_app_development.update | STARTED | {"update"=>"users", "ordered"=>true, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}, "updates"=>[{"q"=>{"_id"=>BSON::ObjectId('5c7bc6706e955216ebda7403')}, "u"=>{"$set"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT...
+MONGODB | localhost:27017 | chat_app_development.update | SUCCEEDED | 0.001s
+Completed 200 OK in 12ms (Views: 0.4ms)
+
+
+Finished "/api/v1/cable/?token=null" [WebSocket] for 127.0.0.1 at 2019-03-03 13:20:00 +0100
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:20:00 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 17ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:20:15 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 3.2ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:20:15 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:20:15 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:21:53 +0100
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:21:55 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 1.6ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:21:55 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:21:55 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:22:00 +0100
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:22:01 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:22:01 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:22:01 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 36ms (Views: 16.2ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.020s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:23:46 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 55ms (Views: 23.4ms)
+
+
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:24:35 +0100
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:24:36 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}}
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:24:36 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:24:36 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 1.4ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:24:56 +0100
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:24:57 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 1.8ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:24:57 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:24:57 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:30:04 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Completed 200 OK in 7ms (Views: 1.8ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:30:23 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 1.1ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c7bab8f6e955216ebda73f7" for 127.0.0.1 at 2019-03-03 13:30:25 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c7bab8f6e955216ebda73f7"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c7bab8f6e955216ebda73f7')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c7bab8f6e955216ebda73f7
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 5ms (Views: 0.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:30:28 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 0.6ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c7bab8f6e955216ebda73f7"}
+RoomChannel stopped streaming from room_channel_5c7bab8f6e955216ebda73f7
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:30:29 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 16ms (Views: 2.1ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 13:31:36 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 1.8ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:32:31 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Completed 200 OK in 18ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:34:55 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.005s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Completed 200 OK in 23ms (Views: 2.3ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:38:38 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 1.4ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:40:27 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 1.3ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}]: /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:40:32 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Completed 200 OK in 16ms (Views: 8.0ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:41:02 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:41:03 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:41:03 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:41:03 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x70116851710280 type=uuid data=0x1fef9ffa4b574bfd...>}, {"id"=><BSON::Binary:0x47265019934620 type=uuid data=0x00461fd4d74f4842...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.003s
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x46969796508820 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x46969796302080 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-03-03 12:42:01 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.023124301>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969796099260 type=uuid data=0x4ea0ac74fb0046da...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969796099260 type=uuid data=0x4ea0ac74fb0046da...>}}
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:42:01 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.009s
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 53ms (Views: 4.6ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+RoomChannel#speak({"message"=>"hola", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"hola\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:43:48 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 33ms (Views: 2.0ms)
+
+
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:43:49 +0100
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:43:49 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 10ms (Views: 4.5ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:43:49 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:43:49 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:43:53 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:43:53 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:43:58 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:43:58 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:02 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 27ms (Views: 12.9ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:10 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+RoomChannel is transmitting the subscription confirmation
+Completed 200 OK in 43ms (Views: 14.0ms)
+
+
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:12 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:13 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:44:13 +0100
+Completed 200 OK in 19ms (Views: 6.9ms)
+
+
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:13 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:34 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+RoomChannel is transmitting the subscription confirmation
+Completed 200 OK in 24ms (Views: 3.4ms)
+
+
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:35 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:36 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 2.0ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:44:36 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:36 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:46 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:44:47 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:44:47 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:44:47 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Completed 200 OK in 21ms (Views: 2.1ms)
+
+
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:47:12 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.4ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:47:12 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 15ms (Views: 7.5ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:47:13 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 12ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:48:50 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 14ms (Views: 1.4ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:48:52 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:48:53 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 6ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:48:53 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:48:53 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:49:03 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 1.9ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:49:03 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:49:04 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 2.6ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:49:04 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:49:04 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:49:15 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 7ms (Views: 1.2ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:49:51 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+Completed 200 OK in 10ms (Views: 3.6ms)
+
+
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:49:52 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:49:53 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.5ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:49:53 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:49:53 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:50:41 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.5ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:50:42 +0100
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:50:43 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 10ms (Views: 1.7ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:50:43 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:50:43 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:51:15 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.013s
+Completed 200 OK in 29ms (Views: 8.0ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:51:17 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:51:18 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.3ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:51:18 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:51:18 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:51:22 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:51:23 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.3ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:51:23 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:51:23 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:52:02 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 11ms (Views: 2.8ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:52:34 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 10ms (Views: 2.4ms)
+
+
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:53:19 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 21ms (Views: 5.1ms)
+
+
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:53:21 +0100
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:53:22 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 8ms (Views: 2.0ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:53:22 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:53:22 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:54:40 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:54:41 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 5ms (Views: 1.4ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:54:41 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:54:41 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:56:02 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+RoomChannel is transmitting the subscription confirmation
+Completed 200 OK in 27ms (Views: 2.4ms)
+
+
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel#speak({"message"=>"aa", "room_id"=>"5c4d81986e95523a5e84c1af"})
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Could not execute command from ({"command"=>"message", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}", "data"=>"{\"message\":\"aa\",\"room_id\":\"5c4d81986e95523a5e84c1af\",\"action\":\"speak\"}"}) [NoMethodError - undefined method `username' for nil:NilClass]: /home/ccalero/repo/chat_app_v2/app/channels/room_channel.rb:15:in `speak' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `public_send' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:266:in `dispatch_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/channel/base.rb:168:in `block in perform_action' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activesupport-5.2.2/lib/active_support/notifications.rb:170:in `instrument'
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:56:18 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:56:19 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 2.7ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:56:19 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:56:19 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:57:43 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 2.5ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:57:45 +0100
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:57:46 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 12ms (Views: 1.6ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 13:57:46 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:57:46 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d81986e95523a5e84c1af
+Started GET "/api/v1/rooms/5c4d81986e95523a5e84c1af" for 127.0.0.1 at 2019-03-03 13:57:52 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d81986e95523a5e84c1af"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d81986e95523a5e84c1af')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+RoomChannel stopped streaming from room_channel_5c4d81986e95523a5e84c1af
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.004s
+Completed 200 OK in 21ms (Views: 3.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:58:47 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 12ms (Views: 1.2ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"RoomChannel\",\"room_id\":\"5c4d81986e95523a5e84c1af\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"RoomChannel","room_id":"5c4d81986e95523a5e84c1af"}]: /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:78:in `find' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /home/ccalero/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.2/lib/action_cable/server/worker.rb:60:in `block in invoke'
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 13:59:37 +0100
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:59:38 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 8ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 13:59:57 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 9ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:02:02 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 15ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:02:17 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 38ms (Views: 2.9ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:02:33 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 16ms (Views: 1.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:02:46 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 31ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:03:13 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:03:35 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 14ms (Views: 3.2ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:03:44 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.5ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:03:46 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 12ms (Views: 0.7ms)
+
+
+Started GET "/api/v1/rooms/5c4d87816e95523ba47ebaa3" for 127.0.0.1 at 2019-03-03 14:03:52 +0100
+Processing by Api::V1::RoomsController#show as HTML
+  Parameters: {"id"=>"5c4d87816e95523ba47ebaa3"}
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{"_id"=>BSON::ObjectId('5c4d87816e95523ba47ebaa3')}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.002s
+Completed 200 OK in 21ms (Views: 3.3ms)
+
+
+Started GET "/api/v1/cable?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" for 127.0.0.1 at 2019-03-03 14:03:52 +0100
+Started GET "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 14:03:52 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"users", "filter"=>{"token"=>"NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544 omMtTj0bhl6efBoPSjC2U O6ajYBnA=="}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.000s
+RoomChannel is transmitting the subscription confirmation
+RoomChannel is streaming from room_channel_5c4d87816e95523ba47ebaa3
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:03:55 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.003s
+Completed 200 OK in 14ms (Views: 0.7ms)
+
+
+Unsubscribing from channel: {"channel":"RoomChannel","room_id":"5c4d87816e95523ba47ebaa3"}
+RoomChannel stopped streaming from room_channel_5c4d87816e95523ba47ebaa3
+Finished "/api/v1/cable/?token=NYaLCcMAE9cyo/i7v/gEdu3c2/s9GINT2Ec/urSW06yJ61qaKwaK544+omMtTj0bhl6efBoPSjC2U+O6ajYBnA==" [WebSocket] for 127.0.0.1 at 2019-03-03 14:04:44 +0100
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:04:45 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.005s
+Completed 200 OK in 15ms (Views: 0.6ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:04:55 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/api/v1/rooms" for 127.0.0.1 at 2019-03-03 14:05:55 +0100
+Processing by Api::V1::RoomsController#index as HTML
+MONGODB | localhost:27017 | chat_app_development.find | STARTED | {"find"=>"rooms", "filter"=>{}, "lsid"=>{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}}
+MONGODB | localhost:27017 | chat_app_development.find | SUCCEEDED | 0.001s
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+MONGODB | localhost:27017 | admin.endSessions | STARTED | {"endSessions"=>[{"id"=><BSON::Binary:0x46969786756920 type=uuid data=0x996bbf6ba59d4d12...>}, {"id"=><BSON::Binary:0x46969796099260 type=uuid data=0x4ea0ac74fb0046da...>}]}
+MONGODB | localhost:27017 | admin.endSessions | SUCCEEDED | 0.000s

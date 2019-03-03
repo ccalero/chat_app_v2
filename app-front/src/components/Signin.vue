@@ -1,14 +1,19 @@
 <template>
-  <div class="col-sm-4 col-sm-offset-4">
-    <h2>Sign In</h2>
+  <div class="">
+    <h1>Sign In</h1>
     <p>Log in to your account.</p>
-    <div class="alert alert-danger" v-if="error">
-      <p>{{ error }}</p>
-    </div>
-    <div class="form-group">
-      <input type="text" class="form-control" placeholder="Enter your username" v-model="credentials.username" >
-    </div>
-    <button class="btn btn-primary" @click="signin()">Access</button>
+    <b-form  @submit="signin" >
+        <b-form-input
+          id="username"
+          type="text"
+          v-model="credentials.username"
+          required
+          placeholder="Enter username" />
+      </b-form-group>
+      <b-button type="submit" variant="primary">Access</b-button>
+    </b-form>
+    <br>
+    <b-alert show variant="danger" v-if="error">{{ error }}</b-alert>
   </div>
 </template>
 
@@ -36,21 +41,7 @@ export default {
         username: this.credentials.username
       }
       auth.login(this, credentials, 'rooms')
-    },
-    signinSuccessful (response) {
-      if (!response.data.csrf) {
-        this.signinFailed(response)
-        return
-      }
-      localStorage.csrf = response.data.csrf
-      localStorage.signedIn = true
-      this.error = ''
-      this.$router.replace('/rooms')
-    },
-    signinFailed (error) {
-      this.error = (error.response && error.response.data && error.response.data.error) || ''
-      delete localStorage.csrf
-      delete localStorage.signedIn
+      this.error = this.credentials.username + " does not exist"
     },
     checkSignedIn () {
       if (localStorage.signedIn) {
