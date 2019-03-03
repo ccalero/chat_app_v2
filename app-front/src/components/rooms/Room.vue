@@ -3,7 +3,7 @@
       <div class="card-header">
         <h3>{{room.title}}</h3>
       </div>
-      <div class="card box-msg" v-chat-scroll>
+      <div class="card box-msg" v-chat-scroll="{always: false, smooth: true}"l>
           <div class="balon1">
               <span class="msg-content">Hey there! What's up? </span>
               <span class="msg-sender">You - 3:22 pm</span>
