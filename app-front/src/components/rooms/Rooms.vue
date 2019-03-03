@@ -1,8 +1,11 @@
 <template>
-  <div class="">
-    <h1>List Rooms</h1>
-    <b-alert show variant="danger" v-if="error">{{ error }}</b-alert>
+  <div class="text-center m-3">
+    <b-row>
+      <b-col><h1 class="text-left">List Rooms</h1></b-col>
+      <b-col><b-button v-b-modal.add_room variant="success">Add new room</b-button></b-col>
+    </b-row>
 
+    <b-alert show variant="danger" v-if="error">{{ error }}</b-alert>
 
     <b-modal id="add_room" ref="hide-footer" title="Add a new room">
       <div class="form-group">
@@ -15,7 +18,7 @@
     </b-modal>
 
     <b-list-group style="margin: 2%;">
-      <b-button v-b-modal.add_room variant="success" style="margin-bottom: 1%;">Add a new room</b-button>
+
       <b-list-group-item
         v-for="room in rooms"
         :key="room._id.$oid"

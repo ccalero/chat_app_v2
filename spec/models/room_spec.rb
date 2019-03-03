@@ -1,12 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Room, type: :model do
-  let(:valid_attributes) do
-    time_now = Time.now.to_i.to_s
-    {
-      title: 'Any Title'+time_now,
-    }
-  end
 
   context 'validation tests' do
     it { is_expected.to be_mongoid_document }
@@ -15,7 +9,8 @@ RSpec.describe Room, type: :model do
     it { is_expected.to embed_many(:messages)}
 
     it 'should save successfully'  do
-      room = Room.new(valid_attributes).save
+      time_now = Time.now.to_i.to_s
+      room = Room.new(title: 'Any Title '+time_now,).save
       expect(room).to eq(true)
     end
   end

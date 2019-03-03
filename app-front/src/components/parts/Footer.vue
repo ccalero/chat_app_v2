@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <small>
-      The Chat App
+      Chat App
       by <a href="https://github.com/ccalero">Carlos Calero</a>
     </small>
   </footer>

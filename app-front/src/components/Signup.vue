@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="text-center m-3">
     <h1>Sign Up</h1>
     <p>Create new account.</p>
     <b-form  @submit="signup" >
@@ -10,7 +10,7 @@
           required
           placeholder="Enter username" />
       </b-form-group>
-      <b-button type="submit" variant="primary">Access</b-button>
+      <b-button class="m-3" type="submit" variant="primary">Create</b-button>
     </b-form>
     <br>
     <b-alert show variant="danger" v-if="error">{{ error }}</b-alert>

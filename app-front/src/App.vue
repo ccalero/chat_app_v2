@@ -3,7 +3,7 @@
     <Header/>
     <b-container>
       <b-row class="justify-content-md-center">
-          <div id="app" style="width: 100%;">
+          <div id="app" style="width: 100%" class="p-3">
             <router-view></router-view>
             <Footer/>
           </div>
