@@ -92,7 +92,7 @@ Comprobamos el estado del servicio
 
 ## Clonamos repositorio
 
-    $ git clone https://github.com/ccalero/chat_app.git
+    $ git clone https://github.com/ccalero/chat_app_v2.git
 
 
 ## Instalamos las gemas del proyecto
