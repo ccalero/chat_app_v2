@@ -146,7 +146,7 @@ Y el servidor de vuejs dentro del directorio chat_app_v2/app-front
 
 ## Demo
 
-Aqui podemos ver, el funcionamiento del chat con dos usuarios ("usuario1" y "usuario2") en la sala "Sala de Demo". Al mismo tiempo otros dos usuarios ("usuario3" y "usuario4") están en la sala "Sala 2"
+Aqui podemos ver, el funcionamiento del chat con dos usuarios ("usuario1" y "usuario2") en la sala "Sala Demo". Al mismo tiempo otros dos usuarios ("usuario3" y "usuario4") están en la sala "Sala 2"
 
 En ventanas independientes que se actualizan con los nuevos mensajes sin refrescar la página
 
